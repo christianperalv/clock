@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reloj Mundial Interactivo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Reloj Mundial Interactivo</h1>
+        
+        <!-- Selector de formato de fecha -->
+        <label for="date-format">Seleccionar formato de fecha:</label>
+        <select id="date-format">
+            <option value="long">Fecha larga (ej. 18 de noviembre de 2024)</option>
+            <option value="short">Fecha corta (ej. 18/11/2024)</option>
+            <option value="medium">Fecha mediana (ej. 18 Nov 2024)</option>
+        </select>
+
+        <!-- Selector de formato de hora -->
+        <label for="time-format">Seleccionar formato de hora:</label>
+        <select id="time-format">
+            <option value="24">Formato 24H</option>
+            <option value="12">Formato 12H (AM/PM)</option>
+        </select>
+
+        <!-- Selector de zona horaria -->
+        <label for="timezone">Seleccionar zona horaria:</label>
+        <select id="timezone">
+            <option value="0">UTC (Londres)</option>
+            <option value="-4">Nueva York</option>
+            <option value="9">Tokio</option>
+        </select>
+
+        <div id="globe"></div>
+        <div id="clock-container">
+            <div id="digital-clock"></div>
+            <div id="analog-clock">
+                <div id="hour-hand" class="hand"></div>
+                <div id="minute-hand" class="hand"></div>
+                <div id="second-hand" class="hand"></div>
+            </div>
+        </div>
+        <div id="country-name"></div>
+        <div id="date-display"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

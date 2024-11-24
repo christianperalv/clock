@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#globe {
+    width: 250px;
+    height: 250px;
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/8/83/Earth_from_Space.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    cursor: pointer;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease;
+}
+
+#globe:hover {
+    transform: scale(1.05);
+}
+
+#clock-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#digital-clock {
+    font-size: 2em;
+    margin-bottom: 10px;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+#analog-clock {
+    width: 150px;
+    height: 150px;
+    border: 2px solid black;
+    border-radius: 50%;
+    position: relative;
+    background-color: #fff;
+}
+
+.hand {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform-origin: 50% 100%;
+    background-color: black;
+}
+
+#hour-hand {
+    width: 4px;
+    height: 40px;
+    margin-left: -2px;
+}
+
+#minute-hand {
+    width: 2px;
+    height: 60px;
+    margin-left: -1px;
+}
+
+#second-hand {
+    width: 1px;
+    height: 70px;
+    background-color: red;
+}
+
+#country-name {
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+select {
+    margin: 10px 0;
+    padding: 5px;
+    font-size: 1em;
+}
